@@ -112,6 +112,7 @@
                             this.getWeather(this.dataCountry.lat, this.dataCountry.lon)
                         })
                     })
+                    this.loading = false
                 } else {
                     this.loading = false
                 }
