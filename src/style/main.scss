@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    font-family: inherit;
+}
+
+h1 {
+    color: lightblue;
+}
+
+.flex {
+    display: flex;
+}
+
+path, circle, rect {
+    transition: all 0.3s linear;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+button img {
+    width: 100%;
+    height: 100%;
+}
+
+.weather-widget {
+    position: relative;
+    width: 300px;
+    min-height: 400px;
+    padding: 20px;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    overflow: auto;
+
+    .header {
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        .settings-icon {
+            height: 20px;
+            width: 20px;
+
+            &:hover {
+                path {
+                    fill: lightblue;
+                }
+            }
+        }
+    }
+
+    .add {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        button {
+            padding: 10px 25px;
+            border-radius: 5px;
+            background: #3396ff;
+            font-weight: 600;
+            color: #ffffff;
+            transition: opacity 0.3s linear;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .temp {
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+            width: 100px;
+            margin-right: 30px;
+        }
+
+        span {
+            font-size: 32px;
+        }
+    }
+
+    .desc {
+        margin-bottom: 20px;
+    }
+
+    .info-wind-pressure {
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .wind-info {
+            align-items: center;
+
+            .wind-direction {
+                width: 16px;
+                margin-right: 10px;
+            }
+
+            .wind-speed {
+                margin-right: 10px;
+            }
+        }
+
+        .pressure-info {
+            align-items: center;
+
+            .pressure {
+                width: 30px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .info-extra {
+        flex-direction: column;
+
+        span {
+            margin-bottom: 10px;
+        }
+    }
+
+    .settings {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 20px;
+        background: #ffffff;
+
+        .header {
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+
+            button {
+                width: 16px;
+                height: 16px;
+                padding: 0px;
+
+                &:hover {
+                    rect {
+                        fill: lightblue;
+                    }
+                }
+            }
+        }
+
+        .locations {
+            margin-bottom: 20px;
+        }
+
+        .location-point {
+            align-items: center;
+            padding: 10px 5px;
+            background: #f5f5f5;
+
+            .handle {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+
+            .delete {
+                width: 20px;
+                margin-left: auto;
+
+                &:hover {
+                    path {
+                        fill: lightblue;
+                    }
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        .add-location {
+            flex-direction: column;
+            align-items: flex-start;
+
+            h2 {
+                margin-bottom: 20px;
+            }
+
+            label {
+                align-items: center;
+            }
+
+            input {
+                margin-bottom: 20px;
+            }
+
+            button {
+                height: 21.5px;
+
+                &:hover {
+                    path {
+                        fill: lightblue;
+                    }
+                }
+            }
+        }
+    }
+
+    h2 {
+        margin: 0px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    button {
+        padding: 0px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+}
