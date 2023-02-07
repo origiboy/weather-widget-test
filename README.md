@@ -19,4 +19,4 @@ npm run build
 ```
 I spent on this project 7 hours.
 ```
-Live-example (integration in simple HTML page): [a link](https://origiboy.github.io/weather-widget-test/)
+Live-example (integration in simple HTML page): <a href="https://origiboy.github.io/weather-widget-test/">https://origiboy.github.io/weather-widget-test/</a>
